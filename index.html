@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknik Perminyakan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1><i class="fas fa-oil-can"></i> Teknik Perminyakan</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Beranda</a></li>
+          <li><a href="#simulation">Simulasi</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="page">
+        <h2>Selamat Datang</h2>
+        <p>Jelajahi dunia teknik perminyakan, mulai dari eksplorasi hingga produksi minyak bumi. Mari kita pelajari bersama!</p>
+        <img src="././Documents/Foto.jpeg" alt="Oil Rig" class="banner">
+      </section>
+
+      <section id="simulation" class="page hidden">
+        <h2>Simulasi Perhitungan</h2>
+        <p>Hitung volume minyak dalam reservoir (estimasi sederhana):</p>
+        <form id="simulationForm">
+          <label for="area">Luas Permukaan Reservoir (m²):</label>
+          <input type="number" id="area" placeholder="Contoh: 1000" required>
+          <label for="thickness">Ketebalan Reservoir (m):</label>
+          <input type="number" id="thickness" placeholder="Contoh: 50" required>
+          <label for="porosity">Porositas (%):</label>
+          <input type="number" id="porosity" placeholder="Contoh: 20" required>
+          <button type="submit">Hitung</button>
+        </form>
+        <p id="result" class="result"></p>
+      </section>
+
+      <section id="feedback" class="page hidden">
+        <h2>Berikan Pendapat Anda</h2>
+        <form id="feedbackForm">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" placeholder="Nama Anda" required>
+          <label for="message">Pesan:</label>
+          <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+        <h3>Pesan Terkirim:</h3>
+        <ul id="feedbackList"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Teknik Perminyakan</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
